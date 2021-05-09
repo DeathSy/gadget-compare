@@ -1,5 +1,7 @@
 import { Sequelize } from 'sequelize-typescript';
+import { Category } from '../category/category.entity';
 import { Product } from '../product/product.entity';
+import { Spec } from '../spec/spec.entity';
 
 export const databaseProviders = [
   {
@@ -13,7 +15,7 @@ export const databaseProviders = [
         password: '1234',
         database: 'appman',
       });
-      sequelize.addModels([Product]);
+      sequelize.addModels([Category, Product, Spec]);
       await sequelize.sync();
       return sequelize;
     },
