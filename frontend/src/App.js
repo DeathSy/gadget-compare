@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg"
+import "./assets/index.scss"
+
+import { Layout } from "antd"
+import MainHeader from "./components/headers/Header"
+import Banner3 from "./components/banners/Banner3"
+import Compare from "./components/compares/Compare"
+import Contact from "./components/contacts/Contact"
+import MainFooter from "./components/footers/Footer"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Layout>
+        <MainHeader />
+        <Banner3 />
+        <Compare />
+        <Contact />
+        <MainFooter />
+      </Layout>
+    </>
+  )
 }
 
-export default App;
+export default App

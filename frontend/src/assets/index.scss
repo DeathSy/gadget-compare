@@ -1,0 +1,197 @@
+.header2 {
+  background: #001529;
+  width: 100%;
+  z-index: 1;
+  // box-shadow: 0 5px 8px rgb(0 0 0 / 15%);
+  // position: relative;
+  top: 0;
+
+  position: absolute;
+  background-color: rgba(0, 21, 41, 0);
+  box-shadow: none;
+
+  .home-page {
+    padding: 0 24px;
+  }
+}
+
+.home-page-wrapper .home-page {
+  height: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  will-change: transform;
+}
+
+.home-page-wrapper .title-wrapper {
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.home-page-wrapper .title-wrapper > h1,
+.home-page-wrapper > h1 {
+  font-size: 32px;
+  color: #314659;
+  margin-bottom: 16px;
+}
+
+.header2-logo {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  line-height: 64px;
+}
+
+.header2-menu {
+  float: right;
+}
+
+.banner3 {
+  width: 100%;
+  height: 100vh;
+  // position: relative;
+  text-align: center;
+  border-color: #666;
+  background-image: url(https://gw.alipayobjects.com/zos/rmsportal/xTPkCNNLOnTEbGgVZOpE.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  .banner3-text-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    max-width: 845px;
+    height: 500px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .banner3-name-en {
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+  .banner3-slogan {
+    font-size: 68px;
+    line-height: 80px;
+    text-indent: 2px;
+    font-weight: 600;
+    margin: 26px auto 38px;
+    overflow: hidden;
+  }
+
+  .banner3-name {
+    font-size: 24px;
+    overflow: hidden;
+    opacity: 0.8;
+  }
+
+  .banner3-button {
+    display: block;
+    margin: 72px auto 0;
+    background: #034365;
+    background: linear-gradient(to right, #034365 0%, #001b33 100%);
+    box-shadow: 0 8px 16px #0a52ab;
+    border: none;
+    transition: background 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+    width: 132px;
+    line-height: 42px;
+    height: 42px;
+    border-radius: 42px;
+  }
+
+  .banner3-time {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+}
+
+.texty {
+  position: relative;
+}
+
+.texty.mask-bottom,
+.texty.mask-top {
+  overflow: hidden;
+}
+
+.content8-wrapper.home-page-wrapper {
+  overflow: initial;
+  width: calc(100% - 112px);
+  min-height: 878px;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 32px 32px #225ede14;
+  background: #fff;
+
+  .home-page {
+    margin-top: -220px;
+    padding: 64px 24px;
+    overflow: hidden;
+  }
+
+  .compare-wrapper {
+    display: flex;
+    border: 1px solid black;
+  }
+}
+
+.content12-wrapper {
+  background-color: #fafafa;
+  min-height: 470px;
+
+  .content12 {
+    padding: 64px 24px;
+  }
+}
+
+.footer2-wrapper {
+  background-color: #0d1a26;
+  height: 80px;
+  overflow: hidden;
+
+  .footer2 {
+    height: 100%;
+    padding: 0 24px;
+    line-height: 80px;
+    text-align: center;
+    color: #999;
+    position: relative;
+  }
+
+  .links {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .copyright {
+    float: right;
+  }
+
+  .copyright-logo {
+    width: 16px;
+    margin-right: 8px;
+  }
+
+  .copyright > * {
+    display: inline-block;
+  }
+
+  .copyright-line {
+    padding: 0 12px;
+    margin: 0 12px;
+  }
+}
