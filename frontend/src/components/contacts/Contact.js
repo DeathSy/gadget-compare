@@ -11,7 +11,7 @@ function Contact() {
               />
             </div>
             <h1 name='title' className='title-h1'>
-              <span>Contact us</span>
+              <span></span>
             </h1>
           </div>
         </div>

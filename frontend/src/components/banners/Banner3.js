@@ -8,19 +8,15 @@ function Banner3() {
           </div>
           <div className='banner3-slogan' data-edit='texty'>
             <div className='texty mask-bottom'>
-              <span>Smart home compares</span>
+              <span>Smart Home Solution</span>
             </div>
           </div>
           <div className='banner3-name'>
             <span>Choose the best, fit your lifestyle.</span>
           </div>
-          <button
-            data-edit='link,text'
-            type='button'
-            className='ant-btn banner3-button ant-btn-primary'
-          >
+          <a href='#compare' className='ant-btn banner3-button ant-btn-primary'>
             <span>Compare</span>
-          </button>
+          </a>
         </div>
       </div>
     </>

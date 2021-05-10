@@ -34,6 +34,9 @@ export class Product extends Model {
   @Column({ type: DataType.DECIMAL(10, 2) })
   price: number;
 
+  @Column
+  preview: string;
+
   @HasMany(() => Spec)
   specs: Spec[];
 }

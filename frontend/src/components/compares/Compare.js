@@ -14,11 +14,23 @@ function ChooseProduct({ products, handleChange }) {
                 {product.name}
               </Option>
             ))
-          : null}
+          : ""}
       </Select>
     </>
   )
 }
+
+function ProductPreview({ product }) {
+  return (
+    <>
+      <img width='70%' src={product?.preview || ""} />
+      <br />
+      <br />
+      <div>{product?.price ? <h3>฿ {product.price}</h3> : ""}</div>
+    </>
+  )
+}
+
 function Compare() {
   const [categories, setCategories] = useState([])
   const [products, setProducts] = useState([])
@@ -80,7 +92,7 @@ function Compare() {
 
   return (
     <>
-      <div className='home-page-wrapper content8-wrapper'>
+      <div id='compare' className='home-page-wrapper content8-wrapper'>
         <div className='home-page content8'>
           <div className='title-wrapper' data-edit='titleWrapper'>
             <div name='image' className='title-image'>
@@ -94,25 +106,30 @@ function Compare() {
             </h1>
           </div>
           <div>
-            <Row>
+            <Row className='text-center'>
               <Col span={6}></Col>
               <Col span={6}>
                 <ChooseProduct products={products} handleChange={handleChange1} />
+                <ProductPreview product={product1} />
               </Col>
               <Col span={6}>
                 <ChooseProduct products={products} handleChange={handleChange2} />
+                <ProductPreview product={product2} />
               </Col>
               <Col span={6}>
                 <ChooseProduct products={products} handleChange={handleChange3} />
+                <ProductPreview product={product3} />
               </Col>
             </Row>
             {categories.map((category, index) => (
-              <Row key={index}>
-                <Col span={6}>{category.name}</Col>
-                <Col span={6}>{getSpecDescByCategoryId(category.id, product1)}</Col>
-                <Col span={6}>{getSpecDescByCategoryId(category.id, product2)}</Col>
-                <Col span={6}>{getSpecDescByCategoryId(category.id, product3)}</Col>
-              </Row>
+              <div className='spec-wrapper' key={index}>
+                <Row>
+                  <Col span={6}>{category.name}</Col>
+                  <Col span={6}>{getSpecDescByCategoryId(category.id, product1)}</Col>
+                  <Col span={6}>{getSpecDescByCategoryId(category.id, product2)}</Col>
+                  <Col span={6}>{getSpecDescByCategoryId(category.id, product3)}</Col>
+                </Row>
+              </div>
             ))}
           </div>
         </div>

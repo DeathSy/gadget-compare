@@ -22,13 +22,13 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          name: 'Bluetooth Connectivity',
+          name: 'Bluetooth',
           sequence: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: 'Wi-Fi Connectivity',
+          name: 'Wireless',
           sequence: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -36,6 +36,18 @@ module.exports = {
         {
           name: 'Weight',
           sequence: 4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: 'Compatibility',
+          sequence: 5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: 'Electrical and Environmental',
+          sequence: 6,
           createdAt: new Date(),
           updatedAt: new Date(),
         },

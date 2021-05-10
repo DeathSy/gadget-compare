@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header2 {
   background: #001529;
   width: 100%;
@@ -20,7 +28,6 @@
   max-width: 1200px;
   position: relative;
   margin: auto;
-  will-change: transform;
 }
 
 .home-page-wrapper .title-wrapper {
@@ -207,4 +214,9 @@
     padding: 0 12px;
     margin: 0 12px;
   }
+}
+
+.spec-wrapper {
+  padding: 18px 24px;
+  border-bottom: 1px solid #999;
 }
