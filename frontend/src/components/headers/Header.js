@@ -4,7 +4,7 @@ const { Header } = Layout
 function MainHeader() {
   return (
     <>
-      <Header className='header2 home-page-wrapper'>
+      <Header className='header2 home-page-wrapper header-editor'>
         <div className='home-page'>
           <div className='header2-logo'>
             <img

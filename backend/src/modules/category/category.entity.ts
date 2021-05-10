@@ -1,5 +1,8 @@
-import { Table, Column, Model } from 'sequelize-typescript';
+import { Table, Column, Model, DefaultScope } from 'sequelize-typescript';
 
+@DefaultScope(() => ({
+  order: ['sequence'],
+}))
 @Table
 export class Category extends Model {
   @Column({
