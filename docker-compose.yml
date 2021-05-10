@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=development
+    environment:
+      - DB_HOST=sql6.freesqldatabase.com
+      - DB_USER=sql6411517
+      - DB_PASS=mPFsCpvZLK
+      - DB_NAME=sql6411517
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start:dev
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - REACT_APP_ENDPOINT=http://localhost:5000
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start

@@ -40,7 +40,7 @@ function Compare() {
 
   const fetchProductDetail = async (id) => {
     try {
-      const url = "http://localhost:5000/products/" + id
+      const url = process.env.REACT_APP_ENDPOINT + "/products/" + id
       const { data } = await axios.get(url)
       return data
     } catch (err) {
@@ -51,7 +51,7 @@ function Compare() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const url = "http://localhost:5000/categories"
+        const url = process.env.REACT_APP_ENDPOINT + "/categories"
         const { data } = await axios.get(url)
         setCategories(data)
       } catch (err) {
@@ -61,7 +61,7 @@ function Compare() {
 
     const fetchProducts = async () => {
       try {
-        const url = "http://localhost:5000/products"
+        const url = process.env.REACT_APP_ENDPOINT + "/products"
         const { data } = await axios.get(url)
         setProducts(data)
       } catch (err) {
